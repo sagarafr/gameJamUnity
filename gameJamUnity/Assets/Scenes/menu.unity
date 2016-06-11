@@ -283,7 +283,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed2c4ef1e13c40a41b09061cfaf415a3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5f01c45595770044b909541a9c704596, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -403,7 +403,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe0655d5419044a43bd5b75d510bc996, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f513c0de13bc3bf4f8f26e5de18ec753, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -475,7 +475,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fd5ca6241e4d532409cd7637c90ed358, type: 3}
+    m_Font: {fileID: 12800000, guid: 9a36db6358382cc4a8bd0aa40c36ca69, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -549,7 +549,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: fd5ca6241e4d532409cd7637c90ed358, type: 3}
+    m_Font: {fileID: 12800000, guid: 9a36db6358382cc4a8bd0aa40c36ca69, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -664,14 +664,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1321460191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2a9e8a491078742a5adac711472e65, type: 3}
+  m_Script: {fileID: 11500000, guid: 93c234c9b74f10548a9c433e98af379b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   delay_time: 5
   time_limit_animation: 7
   sound_main_menu: 0.5
   title: Red Neck Jack VS The Univers
-  delta_sound_main_menu: 0.1
+  delta_sound_main_menu: 0.05
   delta_move_cam: 6
 --- !u!1 &1598242985
 GameObject:
@@ -698,7 +698,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9bd0e1073116c674eacb8b5ec8e97c0a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 76260b3d779955d4ca565e7fc77a0ab9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
   m_Pitch: 1
