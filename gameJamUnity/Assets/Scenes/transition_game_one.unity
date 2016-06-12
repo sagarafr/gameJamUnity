@@ -175,7 +175,7 @@ TextMesh:
   m_GameObject: {fileID: 685637521}
   m_Text: "il \xE9tait une fois \nredneck jack.\nun jeune fermier am\xE9ricain\nne
     voulant que vendre des\nvaches au march\xE9 spatial\nintergalactique de l'espace.\n\nmalheureusement,
-    le chemin\nne se passa pas sans encombres!\n\nvoici son histoire."
+    le chemin\nne se passa pas sans encombre!\n\nvoici son histoire."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
