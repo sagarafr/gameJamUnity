@@ -9,6 +9,7 @@ public class move : MonoBehaviour {
 	}
 
     void Update () {
+        Debug.Log(Screen.width + " " + Screen.height);
         if ((Input.GetKey("up") || (Input.GetKey("z"))) && pos.transform.position.y < 4.8)
         {
             transform.Translate(new Vector3(0, (float)0.1, 0));

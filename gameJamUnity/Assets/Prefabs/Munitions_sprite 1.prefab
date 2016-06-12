@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6167016}
   - 50: {fileID: 5068846}
   - 114: {fileID: 11443178}
+  - 114: {fileID: 11419716}
   m_Layer: 0
   m_Name: Munitions_sprite 1
   m_TagString: Untagged
@@ -63,6 +64,17 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 2.9999998, y: 3.25}
+--- !u!114 &11419716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975b0e036f1b97f46b6105cde4702767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11443178
 MonoBehaviour:
   m_ObjectHideFlags: 1
