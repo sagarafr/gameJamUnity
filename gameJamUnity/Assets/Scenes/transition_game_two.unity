@@ -242,7 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.03
   limit: 60
-  next: game_one
+  next: transition_end
 --- !u!1 &1213170651
 GameObject:
   m_ObjectHideFlags: 0
