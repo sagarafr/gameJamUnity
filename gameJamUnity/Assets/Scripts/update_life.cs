@@ -25,7 +25,7 @@ public class update_life : MonoBehaviour
     {
         string tmp_life = "Life : " + life_player.instance.get_life().ToString();
         life_text.text = tmp_life;
-/*        if (life_player.instance.get_life() <= 0)
-            SceneManager.LoadScene("");*/
+        if (life_player.instance.get_life() <= 0)
+            SceneManager.LoadScene("game_over");
 	}
 }

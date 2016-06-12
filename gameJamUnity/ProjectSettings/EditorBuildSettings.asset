@@ -17,3 +17,5 @@ EditorBuildSettings:
     path: Assets/Scenes/transition_game_two.unity
   - enabled: 1
     path: Assets/Scenes/transition_end.unity
+  - enabled: 1
+    path: Assets/Scenes/game_over.unity
