@@ -10,10 +10,10 @@ public class spawn_meteor : MonoBehaviour
 	void Start ()
     {
         asteroid = new List<GameObject>();
-        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(0, 0, 0), new Quaternion()));
-        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_2"), new Vector3(0, 1, 0), new Quaternion()));
-        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_3"), new Vector3(0, 2, 0), new Quaternion()));
-        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(0, 3, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(12, 0, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_2"), new Vector3(4, -7, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_3"), new Vector3(2, 7, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(12, -2, 0), new Quaternion()));
     }
 
     void Update()
