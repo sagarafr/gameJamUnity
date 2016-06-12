@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using System;
 
 public class spawn_meteor : MonoBehaviour
 {
     private List<GameObject> asteroid;
+    private int type;
 
     public int limit = 5;
     void Start ()
@@ -15,6 +15,8 @@ public class spawn_meteor : MonoBehaviour
         asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_2"), new Vector3(4, -7, 0), new Quaternion()));
         asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_3"), new Vector3(2, 7, 0), new Quaternion()));
         asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(12, -2, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_2"), new Vector3(0, -7, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_3"), new Vector3(6, 7, 0), new Quaternion()));
     }
 
     void Update()
@@ -23,7 +25,15 @@ public class spawn_meteor : MonoBehaviour
         for (int cpt_spwon = 0; cpt_spwon < asteroid.Count; ++cpt_spwon)
         {
             if (asteroid[cpt_spwon] == null)
-                asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(3, 0, 0), new Quaternion()));
+            {
+                type = Random.Range(1, 3);
+                if (type == 1)
+                    asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(Random.Range(12, 13), Random.Range(7, -7), 0), new Quaternion()));
+                else if (type == 2)
+                    asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_2"), new Vector3(Random.Range(0, 12), -7, 0), new Quaternion()));
+                else if (type == 3)
+                    asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(Random.Range(0, 12), 7, 0), new Quaternion()));
+            }
         }
     }
 }
