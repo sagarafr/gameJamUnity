@@ -12,9 +12,12 @@ public class Move_of_missile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (GetComponent<Rigidbody2D>().transform.position.x > 15)
+        if (GetComponent<Rigidbody2D>() != null)
         {
-            Destroy(GetComponent<Rigidbody2D>(), 1);
+            if (GetComponent<Rigidbody2D>().transform.position.x > 15)
+            {
+                Destroy(GetComponent<Rigidbody2D>(), 1);
+            }
         }
     }
 }

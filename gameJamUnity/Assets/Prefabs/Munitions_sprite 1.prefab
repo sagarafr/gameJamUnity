@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5068846}
   - 114: {fileID: 11443178}
   - 114: {fileID: 11419716}
+  - 114: {fileID: 11477852}
   m_Layer: 0
   m_Name: Munitions_sprite 1
   m_TagString: Untagged
@@ -86,6 +87,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7b3a03dc0042e4c811b5208a4055a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11477852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134046}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16ce4de1e97b9f4f81028bd5c2f37d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 134046}
+  origine: {fileID: 161164, guid: 627d158071fa37240b56dfb98805e56e, type: 2}
 --- !u!212 &21208802
 SpriteRenderer:
   m_ObjectHideFlags: 1
