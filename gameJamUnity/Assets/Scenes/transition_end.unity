@@ -143,7 +143,7 @@ Transform:
   m_GameObject: {fileID: 412197104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 11.58}
-  m_LocalScale: {x: 52.65, y: 26.900637, z: 1}
+  m_LocalScale: {x: 52.63, y: 26.53, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -173,9 +173,11 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 685637521}
-  m_Text: "il \xE9tait une fois \nredneck jack.\nun jeune fermier am\xE9ricain\nne
-    voulant que vendre des\nvaches au march\xE9 spatial\nintergalactique de l'espace.\n\nmalheureusement,
-    le chemin\nne se passa pas sans encombres!\n\nvoici son histoire."
+  m_Text: "le jeune redneck\na reussi le transport de son\nfabuleux troupeau de vachettes.\n\nmais,
+    le combat est-il finit?\ncela va t-il continuer de bien\nse passer?\n\ntelle est
+    la question.\n\n\noffre exclusive:\npayez 30 euros pour le DLC comportant\nune
+    mission bonus d'une dur\xE9e d'environ 2\nminutes!\nne ratez pas cette offre!\n(attention
+    une chance sur dix de ne pas recevoir la mission)"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -240,8 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.03
-  limit: 75
-  next: game_one
+  limit: 100
+  next: menu
 --- !u!1 &1213170651
 GameObject:
   m_ObjectHideFlags: 0
