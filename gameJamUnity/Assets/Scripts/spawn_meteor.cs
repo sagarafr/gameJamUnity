@@ -24,10 +24,6 @@ public class spawn_meteor : MonoBehaviour
         Debug.Log(score_player.instance.get_score());
         for (int cpt_spwon = 0; cpt_spwon < asteroid.Count; ++cpt_spwon)
         {
-            if (asteroid[cpt_spwon].transform.position.y > 7)
-                    asteroid[cpt_spwon].transform.position = new Vector3(Random.Range(0, 12), -7, 0);
-            if (asteroid[cpt_spwon].transform.position.y < -7)
-                    asteroid[cpt_spwon].transform.position = new Vector3(Random.Range(0, 12), 7, 0);
             if (asteroid[cpt_spwon] == null)
             {
                 type = Random.Range(1, 4);
@@ -37,7 +33,12 @@ public class spawn_meteor : MonoBehaviour
                     asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_2"), new Vector3(Random.Range(0, 12), -7, 0), new Quaternion()));
                 else if (type == 3)
                     asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_3"), new Vector3(Random.Range(0, 12), 7, 0), new Quaternion()));
+                continue;
             }
+            if (asteroid[cpt_spwon].transform.position.y > 7)
+                asteroid[cpt_spwon].transform.position = new Vector3(Random.Range(0, 12), -7, 0);
+            if (asteroid[cpt_spwon].transform.position.y < -7)
+                asteroid[cpt_spwon].transform.position = new Vector3(Random.Range(0, 12), 7, 0);
         }
     }
 }

@@ -98,6 +98,7 @@ GameObject:
   - 50: {fileID: 50067435}
   - 114: {fileID: 50067434}
   - 114: {fileID: 50067436}
+  - 114: {fileID: 50067440}
   m_Layer: 0
   m_Name: Sprite_Redneck_ship
   m_TagString: Untagged
@@ -208,6 +209,17 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 5.9999995, y: 4.81}
+--- !u!114 &50067440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50067433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30aea1caa9da28349a0169f536424700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &235255623
 GameObject:
   m_ObjectHideFlags: 0
