@@ -561,7 +561,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Red Neck Jack VS The Univers
+  m_Text: Red Neck Jack VS The Universe
 --- !u!222 &1175074262
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -673,6 +673,7 @@ MonoBehaviour:
   title: Red Neck Jack VS The Univers
   delta_sound_main_menu: 0.05
   delta_move_cam: 6
+  delay_time_to_transition: 0.1
 --- !u!1 &1598242985
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +701,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 76260b3d779955d4ca565e7fc77a0ab9, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0

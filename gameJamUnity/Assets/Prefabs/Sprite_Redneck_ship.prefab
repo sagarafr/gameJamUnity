@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11439052}
   - 50: {fileID: 5031324}
   - 114: {fileID: 11421360}
+  - 61: {fileID: 6120154}
   m_Layer: 0
   m_Name: Sprite_Redneck_ship
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.65, y: 0.53, z: -1}
-  m_LocalScale: {x: 0.66037875, y: 0.6603786, z: 0.6603786}
+  m_LocalPosition: {x: -8.65, y: 0.53, z: 0}
+  m_LocalScale: {x: 0.66037875, y: 0.6603786, z: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49,6 +50,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &6120154
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161164}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 5.9999995, y: 4.81}
 --- !u!114 &11421360
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -57,11 +72,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 161164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4817445b64a7e3d48a908ed3f53ee01f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f53b8d4311e74546a2d179b17ab3493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos: {fileID: 162754}
-  force: 500
+  pos: {fileID: 161164}
 --- !u!114 &11439052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -70,12 +84,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 161164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6905326e6ee642b46b7522570a9b57b1, type: 3}
+  m_Script: {fileID: 11500000, guid: e16ce4de1e97b9f4f81028bd5c2f37d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 134046, guid: b01fa2d85d2e5a84dadd0c79c0321bf0, type: 2}
-  origine: {fileID: 162754}
-  force: 500
+  projectile: {fileID: 134046, guid: e127102cd9674414e8e50054927c0824, type: 2}
+  origine: {fileID: 161164}
 --- !u!212 &21271788
 SpriteRenderer:
   m_ObjectHideFlags: 1

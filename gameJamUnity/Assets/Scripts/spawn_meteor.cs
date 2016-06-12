@@ -1,38 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System;
 
 public class spawn_meteor : MonoBehaviour
 {
-    public GameObject[] asteroid;
-    private int counter;
-    private int countertab;
-    private int type;
+    private List<GameObject> asteroid;
 
 	void Start ()
     {
-        countertab = 0;
-        counter = Random.Range(1, 5);
-        while (counter > 0)
-        {
-            type = Random.Range(1, 3);
-            if (type == 1)
-            {
-                asteroid[countertab] = GameObject.Find("meteor_1");
-                asteroid[countertab].transform.position = new Vector3(Random.Range(13, 14), Random.Range(-15, 15), 0);
-            }
-            if (type == 2)
-            {
-                asteroid[countertab] = GameObject.Find("meteor_2");
-                asteroid[countertab].transform.position = new Vector3(Random.Range(0, -15), Random.Range(-15, -16), 0);
-            }
-            if (type == 3)
-            {
-               asteroid[countertab] = GameObject.Find("meteor_3");
-               asteroid[countertab].transform.position = new Vector3(Random.Range(0, -15), Random.Range(15, 16), 0);
-            }
-            counter--;
-            countertab++;
-        }
-	}
-	
+        asteroid = new List<GameObject>();
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(0, 0, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_2"), new Vector3(0, 1, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_3"), new Vector3(0, 2, 0), new Quaternion()));
+        asteroid.Add((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(0, 3, 0), new Quaternion()));
+    }
+
+    void Update()
+    {
+        Debug.Log(score_player.instance.get_score());
+    }
 }

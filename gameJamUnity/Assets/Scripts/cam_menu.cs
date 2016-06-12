@@ -11,6 +11,7 @@ public class cam_menu : MonoBehaviour
     public string title = "Red Neck Jack VS The Univers";
     public float delta_sound_main_menu = 0.05F;
     public float delta_move_cam = 6;
+    public float delay_time_to_transition = 0.1F;
 
     private float timer;
     private Vector3 inital_cam_position;
@@ -57,7 +58,7 @@ public class cam_menu : MonoBehaviour
         {
             play_button = play_button_gameobject.GetComponent<Button>();
             play_button_gameobject.SetActive(false);
-            play_button.onClick.AddListener(play);
+            play_button.onClick.AddListener(this.play);
         }
 
     }
@@ -71,7 +72,9 @@ public class cam_menu : MonoBehaviour
         {
             main_menu_music.volume = main_menu_music.volume + delta_sound_main_menu;
             if (main_menu_music.volume >= sound_main_menu)
+            {
                 main_menu_music.volume = sound_main_menu;
+            }
         }
 
         if (timer >= audio_jack_voice_intro.clip.length && !main_menu_music.isPlaying)
@@ -112,6 +115,12 @@ public class cam_menu : MonoBehaviour
 
     void play()
     {
-        SceneManager.LoadScene("game");
+        while (true)
+        {
+            this.main_menu_music.volume -= delay_time_to_transition;
+            if (this.main_menu_music.volume <= 0)
+                break;
+        }
+        SceneManager.LoadScene("transition_game_one");
     }
 }
