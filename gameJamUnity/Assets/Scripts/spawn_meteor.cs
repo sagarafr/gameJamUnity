@@ -24,15 +24,19 @@ public class spawn_meteor : MonoBehaviour
         Debug.Log(score_player.instance.get_score());
         for (int cpt_spwon = 0; cpt_spwon < asteroid.Count; ++cpt_spwon)
         {
+            if (asteroid[cpt_spwon].transform.position.y > 7)
+                    asteroid[cpt_spwon].transform.position = new Vector3(Random.Range(0, 12), -7, 0);
+            if (asteroid[cpt_spwon].transform.position.y < -7)
+                    asteroid[cpt_spwon].transform.position = new Vector3(Random.Range(0, 12), 7, 0);
             if (asteroid[cpt_spwon] == null)
             {
-                type = Random.Range(1, 3);
+                type = Random.Range(1, 4);
                 if (type == 1)
-                    asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(Random.Range(12, 13), Random.Range(7, -7), 0), new Quaternion()));
+                    asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(Random.Range(12, 13), Random.Range(5, -5), 0), new Quaternion()));
                 else if (type == 2)
                     asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_2"), new Vector3(Random.Range(0, 12), -7, 0), new Quaternion()));
                 else if (type == 3)
-                    asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_1"), new Vector3(Random.Range(0, 12), 7, 0), new Quaternion()));
+                    asteroid[cpt_spwon] = ((GameObject)Instantiate(Resources.Load("meteor_3"), new Vector3(Random.Range(0, 12), 7, 0), new Quaternion()));
             }
         }
     }
