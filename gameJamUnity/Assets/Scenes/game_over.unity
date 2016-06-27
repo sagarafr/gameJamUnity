@@ -181,6 +181,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1768758446}
   - 212: {fileID: 1768758445}
+  - 114: {fileID: 1768758447}
   m_Layer: 0
   m_Name: GameOver
   m_TagString: Untagged
@@ -231,3 +232,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &1768758447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1768758444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac55b1a132ffad4c88b5fe3ebea2bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

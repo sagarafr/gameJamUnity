@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class game_over : MonoBehaviour
 {
-
 	// Use this for initialization
 	void Start ()
     {
